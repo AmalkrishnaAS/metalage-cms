@@ -1,3 +1,7 @@
 module.exports = ({ env }) => ({
-  url: env('https://aqueous-retreat-57087.herokuapp.com'),
+  host: env('HOST', '0.0.0.0'),
+  port: env.int('PORT', 1337),
+  app: {
+    keys: env.array(['amal','hi','bye']),
+  },
 });

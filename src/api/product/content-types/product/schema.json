@@ -23,15 +23,14 @@
         "images"
       ]
     },
-    "categories": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::category.category",
-      "private": true,
-      "inversedBy": "products"
-    },
     "category": {
       "type": "string"
+    },
+    "sections": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::section.section",
+      "inversedBy": "products"
     }
   }
 }

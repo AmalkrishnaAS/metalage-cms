@@ -1,24 +1,25 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "sections",
   "info": {
-    "singularName": "category",
-    "pluralName": "categories",
-    "displayName": "category"
+    "singularName": "section",
+    "pluralName": "sections",
+    "displayName": "Section",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "category": {
+    "name": {
       "type": "string"
     },
     "products": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::product.product",
-      "mappedBy": "categories"
+      "inversedBy": "sections"
     }
   }
 }

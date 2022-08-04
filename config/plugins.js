@@ -6,11 +6,11 @@ module.exports = ({env}) => ({
       config: {
         provider: 'aws-s3',
         providerOptions: {
-          accessKeyId:'AKIATBE2UU5PLPRFDKER',
-          secretAccessKey: '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',
-          region:'us-east-1',
+          accessKeyId:'AKIAYWZPHCGMMJLV7EVN',
+          secretAccessKey: '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',
+          region:'ap-south-1',
           params: {
-            Bucket:'metalage'
+            Bucket:'metalage-strapi'
           },
         },
       },

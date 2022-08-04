@@ -7,8 +7,8 @@ module.exports = [
         useDefaults: true,
         directives: {
           "connect-src": ["'self'", "https:"],
-          "img-src": ["'self'", "data:", "blob:", "metalage.s3.amazonaws.com"],
-          "media-src": ["'self'", "data:", "blob:", "metalage.s3.amazonaws.com"],
+          "img-src": ["'self'", "data:", "blob:", "metalage-strapi.s3.amazonaws.com"],
+          "media-src": ["'self'", "data:", "blob:", "metalage-strapi.s3.amazonaws.com"],
           upgradeInsecureRequests: null,
         },
       },

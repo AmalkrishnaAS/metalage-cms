@@ -1,18 +1,20 @@
 
 
-module.exports = ({env}) => ({
-  
+  module.exports = ({ env }) => ({
+    // ...
     upload: {
       config: {
-        provider: 'aws-s3',
+        provider: 'cloudinary',
         providerOptions: {
-          accessKeyId:'AKIAYWZPHCGMMJLV7EVN',
-          secretAccessKey: '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',
-          region:'ap-south-1',
-          params: {
-            Bucket:'metalage-strapi'
-          },
+          cloud_name: 'dhzkuzwgl',
+          api_key: '514758594611743',
+          api_secret: 'fByLYaDkg5LSIp8YgpHGGNXlwBA',
+        },
+        actionOptions: {
+          upload: {},
+          delete: {},
         },
       },
     },
+    // ...
   });

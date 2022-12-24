@@ -1,5 +1,5 @@
 const parse = require('pg-connection-string').parse;
-const config = parse('postgres://lshjxbjeilzmgg:44865908c31e788f1ddf34cf63cb8ed3ebebe89d0b7b2ebeece8b9a4e889ad6a@ec2-54-158-247-210.compute-1.amazonaws.com:5432/d8a5e7c2utc49j');
+const config = parse('postgres://metalage_user:IeUjMby6X5If8RDdW3ZjSbHn5H8z0LBe@dpg-cejdohkgqg4ekmcnt8mg-a/metalage');
 module.exports = ({ env }) => ({
   connection: {
     client: 'postgres',
@@ -16,3 +16,14 @@ module.exports = ({ env }) => ({
     debug: false,
   },
 });
+// const path = require('path');
+
+// module.exports = ({ env }) => ({
+//   connection: {
+//     client: 'sqlite',
+//     connection: {
+//       filename: path.join(__dirname, '..', env('DATABASE_FILENAME', '.tmp/data.db')),
+//     },
+//     useNullAsDefault: true,
+//   },
+// });

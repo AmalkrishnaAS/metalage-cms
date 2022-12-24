@@ -1,0 +1,37 @@
+services:
+  - type: web
+    name: strapi
+    env: node
+    plan: starter
+    buildCommand: yarn install && yarn build
+    startCommand: yarn start
+    healthCheckPath: /_health
+    autoDeploy: false
+    envVars:
+      - key: NODE_VERSION
+        value: ~16.13.1
+      - key: NODE_ENV
+        value: production
+      - key: dhzkuzwgl
+        sync: false
+      - key: 514758594611743
+        sync: false
+      - key: fByLYaDkg5LSIp8YgpHGGNXlwBA
+        sync: false
+      - key: postgres://metalage_user:IeUjMby6X5If8RDdW3ZjSbHn5H8z0LBe@dpg-cejdohkgqg4ekmcnt8mg-a/metalage
+        fromDatabase:
+          name: strapi
+          property: connectionString
+      - key: JWT_SECRET
+        generateValue: true
+      - key: ADMIN_JWT_SECRET
+        generateValue: true
+      - key: APP_KEYS
+        generateValue: true
+
+databases:
+  - name: strapi
+    plan: starter
+
+
+    
